@@ -336,6 +336,7 @@
 <text x="-2.286" y="1.905" size="1.778" layer="95">&gt;NAME</text>
 <pin name="A" x="-5.08" y="0" visible="off" length="middle" direction="pas"/>
 <pin name="C" x="5.08" y="0" visible="off" length="middle" direction="pas" rot="R180"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="LIN_REG">
 <pin name="IN" x="-12.7" y="2.54" visible="pin" length="middle" direction="pwr"/>
@@ -506,7 +507,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="NEX_BAT54GW" prefix="D">
+<deviceset name="NEX_BAT54GW" prefix="D" uservalue="yes">
 <gates>
 <gate name="G$1" symbol="SCHOTTKY" x="0" y="0"/>
 </gates>
@@ -611,7 +612,7 @@
 <part name="TP16" library="travis" deviceset="KEYSTONE_500X" device=""/>
 <part name="C2" library="travis" deviceset="C_0805" device="" value="100n"/>
 <part name="C3" library="travis" deviceset="PANASONIC_EEE_4MM" device="" value="10u"/>
-<part name="D1" library="travis" deviceset="NEX_BAT54GW" device=""/>
+<part name="D1" library="travis" deviceset="NEX_BAT54GW" device="" value="BAT54GW"/>
 <part name="U2" library="travis" deviceset="TI_LM2937" device=""/>
 <part name="R1" library="travis" deviceset="R_0805" device="" value="1k"/>
 <part name="D2" library="travis" deviceset="LED_0805" device=""/>
@@ -622,7 +623,7 @@
 </plain>
 <instances>
 <instance part="J1" gate="G$1" x="20.32" y="106.68" smashed="yes">
-<attribute name="NAME" x="15.24" y="96.52" size="2.54" layer="95"/>
+<attribute name="NAME" x="15.24" y="96.52" size="1.778" layer="95"/>
 </instance>
 <instance part="C1" gate="G$1" x="48.26" y="101.6" smashed="yes">
 <attribute name="NAME" x="50.8" y="101.6" size="1.778" layer="95"/>
@@ -782,10 +783,11 @@
 </instance>
 <instance part="D1" gate="G$1" x="40.64" y="111.76" smashed="yes">
 <attribute name="NAME" x="38.354" y="113.665" size="1.778" layer="95"/>
+<attribute name="VALUE" x="35.56" y="106.68" size="1.778" layer="96"/>
 </instance>
 <instance part="U2" gate="G$1" x="81.28" y="109.22" smashed="yes">
-<attribute name="NAME" x="73.66" y="119.38" size="1.27" layer="95"/>
-<attribute name="VALUE" x="81.28" y="119.38" size="1.27" layer="96"/>
+<attribute name="NAME" x="73.66" y="116.84" size="1.778" layer="95"/>
+<attribute name="VALUE" x="81.28" y="116.84" size="1.778" layer="96"/>
 </instance>
 <instance part="R1" gate="G$1" x="114.3" y="96.52" smashed="yes" rot="R90">
 <attribute name="NAME" x="112.8014" y="92.71" size="1.778" layer="95" rot="R90"/>
